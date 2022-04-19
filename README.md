@@ -6,8 +6,6 @@ Comandos para começar um aplicação em Python
 https://app.betrybe.com/course/real-life-engineer/python/
 
 # Pyenv (opcional)
-  - “O Pyenv permite alternar facilmente entre várias versões do Python. É simples, discreto e segue a tradição UNIX de ferramentas de propósito único que fazem uma coisa bem.”
-
   1. Baixe e instale o pyenv:
 ```
 curl https://pyenv.run | bash
@@ -50,8 +48,6 @@ pyenv versions
 ```
 sudo apt install python3-venv
 ```
-      
-  ### Vamos verificar se deu tudo certo?
    #### Em um terminal digite:
 ```
 python3 -m venv -h
@@ -83,11 +79,10 @@ pip install flake8 black
 
 # Flake8
   Como instalar
-  O pacote flake8 pode ser instalado utilizando utilizando a ferramenta pip vista anteriormente. Vamos utilizar sudo neste caso para garantir que ela esteja disponível para todos os usuários do sistema operacional. Digite o comando abaixo:
+  Vamos utilizar sudo neste caso para garantir que ela esteja disponível para todos os usuários do sistema operacional. Digite o comando abaixo:
  ```
 sudo python3 -m pip install flake8
 ```
-  Vamos verificar se deu tudo certo?
   Digite o comando:
 ```
 python3 -m flake8 --version
@@ -99,11 +94,11 @@ python3 -m flake8 --version
 
 # Black
   Como instalar
-  O pacote black pode ser instalado utilizando utilizando a ferramenta pip vista anteriormente. Vamos utilizar sudo neste caso para garantir que ela esteja disponível para todos os usuários do sistema operacional. Digite o comando abaixo:
+  Vamos utilizar sudo neste caso para garantir que ela esteja disponível para todos os usuários do sistema operacional. Digite o comando abaixo:
 ```
 sudo python3 -m pip install black
 ```
-  Vamos verificar se deu tudo certo?
+  Digite o comando:
 ```
 python3 -m black --version
 ```
@@ -113,12 +108,6 @@ __main__.py, version 20.8b1
 ```
 
 # VSCode(Python)
-  O que é?
-    O VSCode é um editor de texto e possui uma excelente extensão para Python que pode ser instalada através da marketplace .
-
-  Para que serve?
-    O plugin de Python para VSCode fornece auto-complete , integração com os linters vistos anteriormente, também é uma ferramenta para depuração de código.
-
   Como instalar
     Abra o VS Code Quick Open (Ctrl+P) , cole o comando a seguir e pressione enter .
     - ext install ms-python.python
@@ -134,6 +123,6 @@ __main__.py, version 20.8b1
     // ...
 
   Vamos verificar se deu tudo certo?
-    Abra um arquivo com extensão .py no VSCode e digite o código lista = [1,2,3] . Salve o arquivo e um aviso de erro deve acontecer.
+    Abra um arquivo com extensão .py no VSCode e digite o código var = 1 . Salve o arquivo e um aviso de erro deve acontecer.
     Passando o mouse sobre a linha veremos que o erro é: missing whitespace after ','flake8(E231) .
     Para corrigir e testar se o nosso formatador está funcionando corretamente, digite ctrl + shift + i . Após salvar novamente o erro deve ter desaparecido. Caso isto não aconteça certifique que tenha feitos os passos anteriormente para instalação do flake8 e black .
